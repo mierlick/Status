@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <PreferenceCategory android:title="@string/sort_prefs_title">
+        <ListPreference
+            android:key="@string/key_sort_list_preference"
+            android:title="@string/title_sort_list_preference"
+            android:entries="@array/entries_sort_list_preference"
+            android:entryValues="@array/entry_values_sort_list_preference"
+            android:dialogTitle="@string/title_sort_list_preference"
+            android:defaultValue="eventTime desc" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="@string/filter_prefs_title">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/key_pref_filter_enabled"
+            android:summaryOn="@string/summary_pref_filter_enabled_on"
+            android:summaryOff="@string/summary_pref_filter_enabled_off"
+            android:title="@string/title_pref_filter_enabled" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/key_pref_filter_config_change"
+            android:summaryOn="@string/summary_pref_filter_config_change_on"
+            android:summaryOff="@string/summary_pref_filter_config_change_off"
+            android:title="@string/title_pref_filter_config_change"
+            android:dependency="filterEnabledPref" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/key_pref_filter_battery_change"
+            android:summaryOn="@string/summary_pref_filter_battery_change_on"
+            android:summaryOff="@string/summary_pref_filter_battery_change_off"
+            android:title="@string/title_pref_filter_battery_change"
+            android:dependency="filterEnabledPref" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/key_pref_filter_power_change"
+            android:summaryOn="@string/summary_pref_filter_power_change_on"
+            android:summaryOff="@string/summary_pref_filter_power_change_off"
+            android:title="@string/title_pref_filter_power_change"
+            android:dependency="filterEnabledPref" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/key_pref_filter_screen_change"
+            android:summaryOn="@string/summary_pref_filter_screen_change_on"
+            android:summaryOff="@string/summary_pref_filter_screen_change_off"
+            android:title="@string/title_pref_filter_screen_change"
+            android:dependency="filterEnabledPref" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/key_pref_filter_time_ticks_change"
+            android:summaryOn="@string/summary_pref_filter_time_ticks_change_on"
+            android:summaryOff="@string/summary_pref_filter_time_ticks_change_off"
+            android:title="@string/title_pref_filter_time_ticks_change"
+            android:dependency="filterEnabledPref" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/key_pref_filter_log_length_change"
+            android:summaryOn="@string/summary_pref_filter_log_length_change_on"
+            android:summaryOff="@string/summary_pref_filter_log_length_change_off"
+            android:title="@string/title_pref_filter_log_length_change"
+            android:dependency="filterEnabledPref" />
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="@string/startup_prefs_title">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/key_pref_start_monitor_at_boot"
+            android:summaryOn="@string/summary_pref_start_monitor_at_boot_on"
+            android:summaryOff="@string/summary_pref_start_monitor_at_boot_off"
+            android:title="@string/title_pref_start_monitor_at_boot" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

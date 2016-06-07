@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Status</string>
+
+    <string name="sort_prefs_title">Sort Preferences</string>
+    <string name="filter_prefs_title">Filter Preferences</string>
+    <string name="startup_prefs_title">Startup Preferences</string>
+
+    <string name="title_sort_list_preference">Sort Order</string>
+    <string name="key_sort_list_preference">sortOrderPref</string>
+
+    <string name="title_pref_filter_enabled">Filter Log Entries</string>
+    <string name="summary_pref_filter_enabled_on">Filtering enabled</string>
+    <string name="summary_pref_filter_enabled_off">Filtering disabled</string>
+    <string name="key_pref_filter_enabled">filterEnabledPref</string>
+
+    <string name="title_pref_start_monitor_at_boot">Start Monitor at Boot</string>
+    <string name="summary_pref_start_monitor_at_boot_on">Monitor autostarts at boot</string>
+    <string name="summary_pref_start_monitor_at_boot_off">Monitor does not autostarts at boot</string>
+    <string name="key_pref_start_monitor_at_boot">startMonitorAtBootPref</string>
+
+    <string name="title_pref_filter_config_change">Configuration Changes</string>
+    <string name="summary_pref_filter_config_change_on">Show configuration change log entries</string>
+    <string name="summary_pref_filter_config_change_off">Hide configuration change log entries</string>
+    <string name="key_pref_filter_config_change">configChangeFilterPref</string>
+
+    <string name="title_pref_filter_battery_change">Battery Changes</string>
+    <string name="summary_pref_filter_battery_change_on">Show battery change log entries</string>
+    <string name="summary_pref_filter_battery_change_off">Hide battery change log entries</string>
+    <string name="key_pref_filter_battery_change">batteryChangeFilterPref</string>
+
+    <string name="title_pref_filter_power_change">Power Changes</string>
+    <string name="summary_pref_filter_power_change_on">Show power change log entries</string>
+    <string name="summary_pref_filter_power_change_off">Hide power change log entries</string>
+    <string name="key_pref_filter_power_change">powerChangeFilterPref</string>
+
+    <string name="title_pref_filter_screen_change">Screen On/Off</string>
+    <string name="summary_pref_filter_screen_change_on">Show screen on/off log entries</string>
+    <string name="summary_pref_filter_screen_change_off">Hide screen on/off log entries</string>
+    <string name="key_pref_filter_screen_change">screenChangeFilterPref</string>
+
+    <string name="title_pref_filter_time_ticks_change">Time Ticks</string>
+    <string name="summary_pref_filter_time_ticks_change_on">Show time tick log entries</string>
+    <string name="summary_pref_filter_time_ticks_change_off">Hide time tick log entries</string>
+    <string name="key_pref_filter_time_ticks_change">timeTicksChangeFilterPref</string>
+
+    <string name="title_pref_filter_log_length_change">Log Length Updates</string>
+    <string name="summary_pref_filter_log_length_change_on">Show log length entries</string>
+    <string name="summary_pref_filter_log_length_change_off">Hide log length entries</string>
+    <string name="key_pref_filter_log_length_change">logLengthChangeFilterPref</string>
+
+    <string name="action_start">Start Monitor</string>
+    <string name="action_stop">Stop Monitor</string>
+    <string name="action_send_broadcast">Send Broadcast</string>
+    <string name="action_clear_log">Clear Log</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="db_path">/data/data/com.captech.merlick.status/databases/</string>
+    <string name="db_name">status</string>
+
+    <string name="no_results">Not Showing Any Results</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="entries_sort_list_preference">
+        <item>Date (New-Old)</item>
+        <item>Date (Old-New)</item>
+        <item>Title (A-Z)</item>
+        <item>Title (Z-A)</item>
+    </string-array>
+
+    <string-array name="entry_values_sort_list_preference">
+        <item>eventTime desc</item>
+        <item>eventTime</item>
+        <item>eventTitle</item>
+        <item>eventTitle desc</item>
+    </string-array>
+
+</resources>

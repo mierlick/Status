@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_start"
+        android:title="@string/action_start"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_play_arrow_white_48dp" />
+
+    <item android:id="@+id/action_stop"
+        android:title="@string/action_stop"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_stop_white_48dp" />
+
+    <item android:id="@+id/action_send_broadcast"
+        android:title="@string/action_send_broadcast"
+        app:showAsAction="always"
+        android:icon="@drawable/broadcast_white" />
+
+    <item android:id="@+id/action_clear_log"
+        android:title="@string/action_clear_log"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_delete_white_48dp" />
+
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_settings_white_48dp" />
+
+</menu>
