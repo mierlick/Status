@@ -2,8 +2,7 @@ package com.captech.merlick.status;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListView;
@@ -11,7 +10,7 @@ import android.widget.ListView;
 import com.captech.merlick.status.db.EventProvider;
 import com.captech.merlick.status.service.EventService;
 
-public class StatusActivity extends AppCompatActivity {
+public class StatusActivity extends FragmentActivity {
 
     public static final String ACTION_LOG_LENGTH = "com.captech.merlick.status.intent.action.ACTION_LOG_LENGTH";
     public static final String EXTRA_LOG_LENGTH = "logLength";
@@ -25,21 +24,13 @@ public class StatusActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-//        Toolbar toolbarBottom = (Toolbar) findViewById(R.id.toolbar_bottom);
-//        toolbarBottom.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
-//            @Override
-//            public boolean onMenuItemClick(MenuItem item) {
-//                return onMenuItemSelected(item);
-//            }
-//        });
-//        toolbarBottom.inflateMenu(R.menu.main_menu);
-
         getMenuInflater().inflate(R.menu.main_menu, menu);
 
-        return true;
+        return super.onCreateOptionsMenu(menu);
     }
 
-    public boolean onMenuItemSelected(MenuItem item) {
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.action_settings) {
             startActivity(new Intent(this, StatusPreferenceActivity.class));

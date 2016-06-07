@@ -1,8 +1,7 @@
 package com.captech.merlick.status;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import android.support.v4.app.FragmentActivity;
 import android.view.MenuItem;
 
 import com.captech.merlick.status.fragment.StatusPreferenceFragment;
@@ -10,7 +9,7 @@ import com.captech.merlick.status.fragment.StatusPreferenceFragment;
 /**
  * Created by merlick on 5/23/16.
  */
-public class StatusPreferenceActivity extends AppCompatActivity {
+public class StatusPreferenceActivity extends FragmentActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

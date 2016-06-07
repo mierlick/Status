@@ -141,16 +141,17 @@ public class EventAdapter extends CursorAdapter {
                 holder.getCurrentDateTextView().setText(currentTime);
             }
         } else if (viewType == EventType.LogLength.getViewId()) {
-            LogLengthViewHolder holder = (LogLengthViewHolder) view.getTag();
+            if ( view.getTag() instanceof LogLengthViewHolder) {
+                LogLengthViewHolder holder = (LogLengthViewHolder) view.getTag();
 
-            Integer logLength = cursor.getInt(cursor.getColumnIndex(Event.COLUMN_LOG_LENGTH));
+                Integer logLength = cursor.getInt(cursor.getColumnIndex(Event.COLUMN_LOG_LENGTH));
 
-            String logLengthMessage = String.format("Log Length: %d", logLength);
+                String logLengthMessage = String.format("Log Length: %d", logLength);
 
-            holder.getTitleOfEventTextView().setText(eventTitle);
-            holder.getTimestampOfEventTextView().setText(eventTime);
-            holder.getCurrentLogLengthTextView().setText(logLengthMessage);
-
+                holder.getTitleOfEventTextView().setText(eventTitle);
+                holder.getTimestampOfEventTextView().setText(eventTime);
+                holder.getCurrentLogLengthTextView().setText(logLengthMessage);
+            }
         } else {
             BaseViewHolder holder = (BaseViewHolder) view.getTag();
 
